@@ -10,6 +10,7 @@
     border: none;
     cursor: pointer;
     white-space: nowrap;
+    font-weight: bold;
 }
 
 .btn--primary {
@@ -84,13 +85,14 @@
 .primary {
     background-color: var(--primary);
     color: #fff;
-    border: 1px solid #000;
+    border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .primary:hover {
     background-color: #fff;
     color: var(--primary);
-    border: 1px solid #000;
+    border: 1px solid var(--primary);
+    box-shadow: 0px 0px 5px ;
 }
 
 .red {
@@ -109,11 +111,11 @@
     background-color: #fff;
     color: #4C5B71;
     border: 1px solid #4F688D;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .light:hover {
-    background-color: #4C5B71;
+    background-color: var(--primary);
     color: #fff;
     border: 1px solid #4F688D;
 }

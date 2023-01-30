@@ -4,6 +4,11 @@
     padding: 0px;
 }
 
+@font-face {
+  font-family: 'Inter', sans-serif;;
+  src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -23,12 +28,12 @@ nav {
     margin-right: 35px;
 }
 
-.nav-links, .logo-items {
+.nav-links {
     list-style: none;
     vertical-align: middle;
 }
 
-.nav-links, .logo-items, li {
+.nav-links, li {
     display: inline-block;
     vertical-align: middle;
 

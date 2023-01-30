@@ -18,13 +18,9 @@ function NavBar() {
       <header>
         <nav className="navbar">
           <div className="logo">
-            <ul className="logo-items">
-              <li>
-                <Link className="navbar-brand" to="/">
-                  Logo
-                </Link>
-              </li>
-            </ul>
+            <Link className="navbar-brand" to="/">
+              Logo
+            </Link>
           </div>
           <ul className="nav-links">
             <li className="theme-toggle" onClick={handleClick}>
