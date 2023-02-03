@@ -31,9 +31,10 @@ function NavBar() {
             </li>
             <li className="account">
               <Button
-                className="btn"
+                className="btn account"
                 buttonColor="light"
                 buttonSize="btn--small"
+                buttonStyle="btn--primary"
               >
                 Account
               </Button>

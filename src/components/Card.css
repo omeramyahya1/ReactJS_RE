@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Inter', sans-serif;;
+    src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+.card-container {
+  position: absolute;
+  width: 390px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+
+}
+
+.box {
+  height: 250px;
+  width: 390px;
+  background-size: 100% 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.container_info {
+  width: 100% ;
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: 18px;
+  align-items: center;
+  padding: 5px;
+  padding-bottom: 10px;
+  
+}
+  .badge {
+    margin: 0px;
+    width: 75px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #4F688D;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding: 4px
+    
+  }
+
+  .details {
+    float: right;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    
+  }
+    .R-arrow {
+      height: 10px;
+    }
+
+  .details:hover {
+    transition: all 0.3s ease-out;
+    font-size: 20px;
+  }
+
+.profile_info {
+  width: 390px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  bottom: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  
+}

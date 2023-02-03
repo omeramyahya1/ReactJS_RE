@@ -1,13 +1,16 @@
 import React, { Component } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Login.css";
+import NavBar from "../Navbar";
 import { Button } from "../Button";
 import { TextInput } from "../TextInput";
 import "./Login.css";
 
-class Login extends Component {
-  state = {};
-  render() {
-    return (
+function Login() {
+  let navigate = useNavigate();
+  return (
+    <>
+      <NavBar />
       <div className="container">
         <div className="logo-container">Logo</div>
         <div className="credentials">
@@ -21,16 +24,26 @@ class Login extends Component {
           </label>
         </div>
         <div className="submit">
-          <Button className="btn" buttonColor="primary" buttonSize="btn--small">
+          <Button
+            className="btn"
+            buttonColor="primary"
+            buttonSize="btn--small"
+            onClick={() => navigate("/")}
+          >
             Login
           </Button>
-          <Button className="btn" buttonColor="light" buttonSize="btn--small">
+          <Button
+            className="btn"
+            buttonColor="light"
+            buttonSize="btn--small"
+            buttonStyle="btn--outline"
+          >
             SignUp
           </Button>
         </div>
       </div>
-    );
-  }
+    </>
+  );
 }
 
 export default Login;

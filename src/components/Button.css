@@ -74,13 +74,9 @@
     transition: all 0.3s ease-out;
     background-color: var(--primary);
     color: #fff;
+    
 }
 
-.btn--wide:hover {
-    /* 
-    Again Idt I will use it.
-    */
-}
 
 .primary {
     background-color: var(--primary);
@@ -89,11 +85,13 @@
 }
 
 .primary:hover {
+    transition: all 0.3s ease;
     background-color: #fff;
     color: var(--primary);
     border: 1px solid var(--primary);
     box-shadow: 0px 0px 5px ;
 }
+
 
 .red {
     background-color: #fff;
@@ -117,6 +115,7 @@
 .light:hover {
     background-color: var(--primary);
     color: #fff;
-    border: 1px solid #4F688D;
+    border: 1px solid #3e5270;
+    box-shadow: 0px 0px 5px black;
 }
 
