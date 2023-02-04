@@ -2,17 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Card.css";
 
-const Defult = {
-  img_path: "/images/aptm-1.jpg",
-  status: "Rented",
-  price: "250,000",
-  location: "Dubai - Business bay-1",
-};
-
 export const Card = ({ img_path, status, price, location }) => {
-  const id = (price + status + location).toString();
+  const id = (price + status + location).toString().replaceAll(" ", "");
 
-  const Newfiles = () => {};
+  // create a new file in the server when a new card is created.
+
   return (
     <>
       <div className="card-container">
@@ -24,7 +18,7 @@ export const Card = ({ img_path, status, price, location }) => {
         >
           <div className="container_info">
             <p className="badge">{status}</p>
-            <Link className="details" to={`/apartments/${id}`}>
+            <Link className="details" to={`/${id}`}>
               Details <img className="R-arrow" src="/right-arrow.png"></img>
             </Link>
           </div>

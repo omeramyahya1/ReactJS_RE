@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-import NavBar from "../Navbar";
+import { No_account } from "../Navbar";
 import { Button } from "../Button";
 import { TextInput } from "../TextInput";
 import "./Login.css";
 
 function Login() {
   let navigate = useNavigate();
+  let handleClick;
   return (
     <>
-      <NavBar />
+      <No_account />
       <div className="container">
         <div className="logo-container">Logo</div>
         <div className="credentials">

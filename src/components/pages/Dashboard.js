@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "../Card";
-import Navbar from "../Navbar";
+import { NavBar } from "../Navbar";
 import "./Dashboard.css";
 
 function Dashboard() {
@@ -9,7 +9,7 @@ function Dashboard() {
 
   return (
     <>
-      <Navbar />
+      <NavBar />
 
       <div className="grid-container">
         <div className="card-1">
@@ -42,6 +42,22 @@ function Dashboard() {
             status={"Rented"}
             price="250,000"
             location="Dubai - Business bay-1"
+          />
+        </div>
+        <div className="card-3">
+          <Card
+            img_path="/images/aptm-4.jpg"
+            status={"Rented"}
+            price="750,000"
+            location="Dubai - International City"
+          />
+        </div>
+        <div className="card-1">
+          <Card
+            img_path="/images/aptm-2.jpg"
+            status={"Rented"}
+            price="500,000"
+            location="Dubai - JBR"
           />
         </div>
       </div>
