@@ -8,7 +8,6 @@ import "./Login.css";
 
 function Login() {
   let navigate = useNavigate();
-  let handleClick;
   return (
     <>
       <No_account />

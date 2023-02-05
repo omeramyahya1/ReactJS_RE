@@ -4,15 +4,17 @@ import React from "react";
 import { NavBar } from "../../Navbar";
 import "./1.css";
 import { Button } from "../../Button";
+import { useNavigate } from "react-router-dom";
 
 function Apt1() {
   const img_path = "/images/aptm-1.jpg";
-  const status = "Rented";
+  const name = "250,000RentedDubai-Businessbay-1";
+
+  let navigate = useNavigate();
 
   return (
     <>
       <NavBar />
-      {/* <h1>250,000RentedDubai-Businessbay-1</h1> */}
       <div className="grid_container">
         <div
           className="gallery_container item1"
@@ -31,7 +33,9 @@ function Apt1() {
           </h1>
         </div>
         <div className="buttons item2">
-          <Button id="Button">Contract</Button>
+          <Button id="Button" onClick={() => navigate(`contract`)}>
+            Contract
+          </Button>
           <Button id="Button">Accounts</Button>
         </div>
       </div>
