@@ -153,13 +153,14 @@ function Contract_2() {
         </div>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <p
+            id="payment_plan"
             style={{
               fontSize: "26px",
               fontWeight: "bold",
               alignSelf: "center",
             }}
           >
-            Payment
+            Payment plan
           </p>
         </div>
         <div className="payment">

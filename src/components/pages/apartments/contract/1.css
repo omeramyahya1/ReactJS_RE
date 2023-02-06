@@ -1,7 +1,7 @@
 .wallPaperPic {
     background-size: 100% 100%;
     width: 100%;
-    height: 400px;
+    height: 600px;
     display: flex;
     align-items: flex-end;
     align-self: center;
@@ -14,12 +14,22 @@
     flex-direction: row;
     align-items:center;
     justify-content: space-between;
-    width: 100%
+    width: 100%;
+    margin: 1em;
 }
 
     .down_content > p {
-        margin: 5px;
+        
         color: #fff;
+    }
+
+    .down_content .badge {
+        display: flex;
+        width: 100px;
+        height: 34px;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px
     }
 
 .pageGrid {
@@ -88,6 +98,7 @@ document > div p {
     margin: 2em;
     margin-top: 0em;
     margin-bottom: 5em;
+    color: #3F4B5E;
 }
     .IdDocs > div {
         display: flex;
@@ -108,10 +119,12 @@ document > div p {
     gap: 2em
 
 }
+
     .payment p {
         font-size: 22px;
         font-weight: bold;
         margin: 0em;
+
     
     }
 
@@ -123,6 +136,11 @@ document > div p {
         align-self: center;
         cursor: pointer
     }
+
+#payment_plan {
+    color: #3F4B5E;
+    margin-bottom: 2em;
+}
 
 .payment_item {
     display: grid;

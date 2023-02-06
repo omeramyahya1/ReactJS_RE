@@ -26,6 +26,11 @@ nav {
 
 .account {
     margin-right: 35px;
+    
+}
+
+.account Button {
+  width: 100px;
 }
 
 .nav-links {
