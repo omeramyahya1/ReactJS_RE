@@ -9,6 +9,10 @@ import Contract_1 from "./components/pages/apartments/contract/1";
 import Contract_2 from "./components/pages/apartments/contract/2";
 import Contract_3 from "./components/pages/apartments/contract/3";
 import Contract_4 from "./components/pages/apartments/contract/4";
+import Accounts_1 from "./components/pages/apartments/utils_bills/1";
+import Accounts_2 from "./components/pages/apartments/utils_bills/2";
+import Accounts_3 from "./components/pages/apartments/utils_bills/3";
+import Accounts_4 from "./components/pages/apartments/utils_bills/4";
 import NOTFOUND from "./components/pages/NOTFOUND";
 import Account_profile from "./components/pages/Account_profile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -42,6 +46,22 @@ function App() {
         <Route
           path="/750,000RentedDubai-InternationalCity/contract"
           element={<Contract_4 />}
+        />
+        <Route
+          path="/250,000RentedDubai-Businessbay-1/accounts"
+          element={<Accounts_1 />}
+        />
+        <Route
+          path="/500,000RentedDubai-JBR/accounts"
+          element={<Accounts_2 />}
+        />
+        <Route
+          path="/750,000RentedDubai-Businessbay-1/accounts"
+          element={<Accounts_3 />}
+        />
+        <Route
+          path="/750,000RentedDubai-InternationalCity/accounts"
+          element={<Accounts_4 />}
         />
         <Route path="*" element={<NOTFOUND />} />
       </Routes>

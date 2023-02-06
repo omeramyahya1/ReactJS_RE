@@ -36,7 +36,9 @@ function Apt2() {
           <Button id="Button" onClick={() => navigate("contract")}>
             Contract
           </Button>
-          <Button id="Button">Accounts</Button>
+          <Button id="Button" onClick={() => navigate(`accounts`)}>
+            Accounts
+          </Button>
         </div>
       </div>
     </>
